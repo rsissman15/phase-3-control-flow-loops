@@ -1,5 +1,6 @@
 require_relative 'spec_helper'
 require_relative '../looping'
+require 'pry'
 
 describe '#happy_new_year' do
 
@@ -33,3 +34,14 @@ describe '#reverse_string' do
   end
   
 end
+
+
+def happy_new_year
+  counter=10
+  until counter<0
+    puts counter
+    counter -=1
+    puts "Happy New Year"
+  end
+end
+binding.pry
